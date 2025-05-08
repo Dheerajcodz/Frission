@@ -3,116 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TeamConnect</title>
-    <link rel="stylesheet" href="1.css" />
+    <title>Google Meet</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="1.css" />
   </head>
-  <body>
-    <button class="menu-btn"><i class="fa-solid fa-user-group"></i></button>
-    <div class="overlay-bg"></div>
 
-    <div class="container">
-      <div class="main-area">
-        <div class="video-panel">
-          <div class="host-box">
-          
-            <div class="video-section">
-              <div class="mute-icon">
-                <i class="fa-solid fa-microphone-slash"></i>
-              </div>
+  <body>
+    <button class="toggle-sidebar">
+      <i class="fa-solid fa-users"></i>
+    </button>
+    <div class="sidebar-overlay"></div>
+
+    <div class="app">
+      <div class="top_section">
+        <!-- Left part -->
+        <div class="vertical_division">
+          <span class="top_icon"><i class="fa-solid fa-gas-pump"></i></span>
+          <div class="main-center">
+            <div class="mike">
+              <div><i class="fa-solid fa-microphone-slash"></i></div>
+            </div>
+            <div class="user-avatar">
               <img
-                src="https://i.pravatar.cc/150?img=5"
-                alt="Host"
-                class="avatar-large"
+                src="https://sharedp.com/wp-content/uploads/2024/05/boy-mask-photo-920x1024.jpg"
+                alt="User"
               />
-              <div class="host-info">
-                <div class="host-name"></div>
-                <div class="">
-                 
-                  <p>Dheeraj</p>
+            </div>
+            <div class="user-detail">
+              <div class="user-name">Nitish Yadav</div>
+              <div class="round-box">
+                <img
+                  src="https://sharedp.com/wp-content/uploads/2024/05/boy-mask-photo-920x1024.jpg"
+                  alt="User"
+                />
+                <p>Nitish Yadav</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- People panel Right Part -->
+        <div class="people-panel">
+          <div class="people-panel-top">
+            <p>People</p>
+            <span class="close-sidebar"><i class="fa-solid fa-xmark"></i></span>
+          </div>
+
+          <div class="search-bar">
+            <input type="text" placeholder="Search for people" />
+          </div>
+          <div class="participants-title">IN THE MEETING</div>
+          <div class="participant-list">
+            <div class="participant-list-top">
+              <p>Contributors</p>
+              <div class="participant_list_right">
+                <p>19</p>
+                <span class="toggle-participants"
+                  ><i class="fa-solid fa-angle-up"></i
+                ></span>
+              </div>
+            </div>
+            <div class="participant-items">
+              <div class="participant">
+                <div class="participant_details">
+                  <img
+                    src="https://sharedp.com/wp-content/uploads/2024/05/boy-mask-photo-920x1024.jpg"
+                    alt="User"
+                  />
+                  <p>Nitish Yadav</p>
+                </div>
+                <div class="participant_right">
+                  <span class="open_mike"
+                    ><i class="fa-solid fa-ellipsis"></i
+                  ></span>
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div>
+              <div class="participant">
+                <div class="participant_details">
+                  <img
+                    src="https://sharedp.com/wp-content/uploads/2024/05/boy-mask-photo-920x1024.jpg"
+                    alt="User"
+                  />
+                  <p>Kapil Sharma</p>
+                </div>
+                <div class="participant_right">
+                  <span><i class="fa-solid fa-microphone-slash"></i></span>
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div>
+              <div class="participant">
+                <div class="participant_details">
+                  <img
+                    src="https://sharedp.com/wp-content/uploads/2024/05/boy-mask-photo-920x1024.jpg"
+                    alt="User"
+                  />
+                  <p>Karan Singh</p>
+                </div>
+                <div class="participant_right">
+                  <span><i class="fa-solid fa-microphone-slash"></i></span>
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div>
+              <div class="participant">
+                <div class="participant_details">
+                  <img
+                    src="https://sharedp.com/wp-content/uploads/2024/05/boy-mask-photo-920x1024.jpg"
+                    alt="User"
+                  />
+                  <p>Sasmita</p>
+                </div>
+                <div class="participant_right">
+                  <span><i class="fa-solid fa-microphone-slash"></i></span>
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
                 </div>
               </div>
             </div>
+            <!-- <div class="participant">
+                        <div class="participant_details">
+                            <img src="https://sharedp.com/wp-content/uploads/2024/05/boy-mask-photo-920x1024.jpg"
+                                alt="User" />
+                            <p>Nitish Yadav</p>
+                        </div>
+                        <div class="participant_right">
+                            <span class="open_mike"><i class="fa-solid fa-ellipsis"></i></span>
+                            <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                        </div>
+                    </div>
+                    <div class="participant">
+                        <div class="participant_details">
+                            <img src="https://sharedp.com/wp-content/uploads/2024/05/boy-mask-photo-920x1024.jpg"
+                                alt="User" />
+                            <p>Kapil Sharma</p>
+                        </div>
+                        <div class="participant_right">
+                            <span><i class="fa-solid fa-microphone-slash"></i></span>
+                            <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                        </div>
+                    </div>
+                    <div class="participant">
+                        <div class="participant_details">
+                            <img src="https://sharedp.com/wp-content/uploads/2024/05/boy-mask-photo-920x1024.jpg"
+                                alt="User" />
+                            <p>Karan Singh</p>
+                        </div>
+                        <div class="participant_right">
+                            <span><i class="fa-solid fa-microphone-slash"></i></span>
+                            <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                        </div>
+                    </div>
+                    <div class="participant">
+                        <div class="participant_details">
+                            <img src="https://sharedp.com/wp-content/uploads/2024/05/boy-mask-photo-920x1024.jpg"
+                                alt="User" />
+                            <p>Sasmita</p>
+                        </div>
+                        <div class="participant_right">
+                            <span><i class="fa-solid fa-microphone-slash"></i></span>
+                            <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                        </div>
+                    </div> -->
           </div>
         </div>
-
-        <aside class="participant-sidebar">
-          <div class="sidebar-header">
-            <p>Participants</p>
-            <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
-          </div>
-          <div class="search-box">
-            <input type="text" placeholder="Find a participant..." />
-          </div>
-          <div class="section-label">Currently Joined</div>
-          <div class="participant-container">
-            <div class="group-header">
-              <p>Team</p>
-              <div>
-                <span>5</span>
-                <i class="fa-solid fa-chevron-up"></i>
-              </div>
-            </div>
-
-            <div class="user-entry">
-              <div class="user-info">
-                <img src="https://i.pravatar.cc/100?img=2" />
-                <p>Dheeraj</p>
-              </div>
-              <div class="user-actions">
-                <i class="fa-solid fa-ellipsis"></i>
-                <i class="fa-solid fa-microphone"></i>
-              </div>
-            </div>
-
-         
-
-           
-            </div>
-          </div>
-        </aside>
       </div>
 
-      <footer class="bottom-bar">
-        <div class="emoji-strip">🎯 😎 💬 🤝 🚀 🔥 ✅ 🧠</div>
-        <div class="footer-actions">
-          <div class="meeting-details">Time: 03:21 | Code: team-123-xyz</div>
-          <div class="btn-controls">
+      <!-- Bottom Section -->
+      <div class="bottom_section">
+        <div class="reactions">❤️ 🎉 👍 👏 😂 😮 😢 👎</div>
+        <div class="controls-data">
+          <div class="meeting-id">12:49 | fzo-xhja-zem</div>
+          <div class="controls">
             <button><i class="fa-solid fa-microphone"></i></button>
-            <button><i class="fa-solid fa-video"></i></button>
-            <button><i class="fa-solid fa-closed-captioning"></i></button>
-            <button><i class="fa-solid fa-face-smile"></i></button>
-            <button><i class="fa-solid fa-display"></i></button>
-            <button class="disconnect">
-              <i class="fa-solid fa-phone-slash"></i>
-            </button>
+            <button><i class="fa-solid fa-video-slash"></i></button>
+            <button><i class="fa-regular fa-closed-captioning"></i></button>
+            <button><i class="fa-sharp fa-regular fa-face-smile"></i></button>
+            <button><i class="fa-solid fa-laptop-medical"></i></button>
+            <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            <button class="end-call"><i class="fa-solid fa-phone"></i></button>
+          </div>
+          <div class="controls">
+            <button><i class="fa-solid fa-circle-info"></i></button>
+            <button><i class="fa-solid fa-users"></i></button>
+            <button><i class="fa-solid fa-message"></i></button>
+            <button><i class="fa-regular fa-circle-dot"></i></button>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
 
     <script>
-      const menuBtn = document.querySelector(".menu-btn");
-      const sidebar = document.querySelector(".participant-sidebar");
-      const closeBtn = document.querySelector(".close-btn");
-      const overlay = document.querySelector(".overlay-bg");
+      const toggleBtn = document.querySelector(".toggle-sidebar");
+      const sidebar = document.querySelector(".people-panel");
+      const closeBtn = document.querySelector(".close-sidebar");
+      const overlay = document.querySelector(".sidebar-overlay");
 
-      menuBtn.addEventListener("click", () => {
-        sidebar.classList.add("visible");
-        overlay.classList.add("visible");
+      // for toggle of participant
+      const toggleParticipantsBtn = document.querySelector(
+        ".toggle-participants"
+      );
+      const participantItems = document.querySelector(".participant-items");
+      const toggleIcon = toggleParticipantsBtn.querySelector("i");
+
+      toggleBtn.addEventListener("click", () => {
+        sidebar.classList.add("show");
+        overlay.classList.add("show");
       });
 
       closeBtn.addEventListener("click", () => {
-        sidebar.classList.remove("visible");
-        overlay.classList.remove("visible");
+        sidebar.classList.remove("show");
+        overlay.classList.remove("show");
       });
 
       overlay.addEventListener("click", () => {
-        sidebar.classList.remove("visible");
-        overlay.classList.remove("visible");
+        sidebar.classList.remove("show");
+        overlay.classList.remove("show");
+      });
+
+      toggleParticipantsBtn.addEventListener("click", () => {
+        participantItems.classList.toggle("hidden");
+
+        // Toggle the icon between up and down
+        if (toggleIcon.classList.contains("fa-angle-up")) {
+          toggleIcon.classList.remove("fa-angle-up");
+          toggleIcon.classList.add("fa-angle-down");
+        } else {
+          toggleIcon.classList.remove("fa-angle-down");
+          toggleIcon.classList.add("fa-angle-up");
+        }
       });
     </script>
   </body>
